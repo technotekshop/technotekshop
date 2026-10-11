@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تکنو تک</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Tahoma,Arial,sans-serif;
+    background:#f4f7fb;
+    color:#172033;
+}
+
+header{
+    background:#102a43;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+    font-size:32px;
+}
+
+header p{
+    color:#b9d7ff;
+}
+nav { background: white; padding: 18px 15px; text-align: center; box-shadow: 0 4px 15px rgba(16, 42, 67, 0.10); border-radius: 0 0 15px 15px; }
+nav a { color: #102a43; text-decoration: none; margin: 0 12px; font-weight: bold; display: inline-block; padding: 8px 12px; border-radius: 8px; transition: all 0.3s ease; }
+nav a:hover { background: #e8f7f0; color: #07855b; transform: translateY(-2px); }
+
+.hero{
+    background:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+.products { display: flex; justify-content: center; align-items: stretch; gap: 25px; flex-wrap: wrap; padding: 35px 20px; }
+.product { background: linear-gradient(145deg, #ffffff, #f4f8fc); width: 230px; padding: 22px; text-align: center; border-radius: 20px; box-shadow: 0 6px 22px rgba(16, 42, 67, 0.12); border: 1px solid #e5edf5; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.product:hover { transform: translateY(-7px); box-shadow: 0 12px 28px rgba(16, 42, 67, 0.2); }
+
+.icon{
+    font-size:60px;
+}
+
+.price { color: #07855b; font-size: 19px; font-weight: bold; margin: 18px 0; padding: 8px; background: #e8f7f0; border-radius: 10px; display: inline-block; }
+
+
+button { background: linear-gradient(135deg, #168aad, #126782); color: white; border: none; padding: 12px 20px; border-radius: 10px; cursor: pointer; font-size: 15px; font-weight: bold; box-shadow: 0 4px 10px rgba(22, 138, 173, 0.2); transition: all 0.25s ease; }
+button:hover { background: linear-gradient(135deg, #126782, #0b4f63); transform: translateY(-2px); box-shadow: 0 7px 15px rgba(22, 138, 173, 0.3); }
+button:active { transform: scale(0.97); }
+footer{
+    margin-top:30px;
+    background:#102a43;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+}
+.product img { transition: transform 0.3s ease; }
+.product img:hover { transform: scale(1.08); }
+header { background: linear-gradient(135deg, #102a43, #168aad); color: white; text-align: center; padding: 30px 20px; border-radius: 0 0 20px 20px; box-shadow: 0 5px 18px rgba(16, 42, 67, 0.2); }
+header h1 { font-size: 42px; font-weight: 900; margin: 0 0 10px; letter-spacing: 1px; text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3); }
+header p { font-size: 16px; margin: 0; opacity: 0.9; }
+#digitalClock { background: #101820; color: #39ff14; padding: 18px 10px; border-radius: 14px; border: 2px solid #39ff14; box-shadow: 0 0 12px rgba(57, 255, 20, 0.35); font-family: monospace; letter-spacing: 3px; text-shadow: 0 0 8px rgba(57, 255, 20, 0.8); }
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>تکنو تک</h1>
+<p>فروشگاه لوازم دیجیتال و ابزارهای کاربردی</p>
+</header>
+
+<nav>
+    <a href="#">🏠 خانه</a>
+    <a href="#">🛍️ محصولات</a>
+    <a href="#">🔥 تخفیف‌ها</a>
+    <a href="#contact">📞 تماس با ما</a>
+    <input id="searchBox" type="text" placeholder="جستجوی محصول..." style="padding:10px; border:1px solid #ddd; border-radius:8px; margin-right:15px;">
+
+    <button
+    onclick="document.getElementById('cart').scrollIntoView({behavior:'smooth'})"
+    style="padding:10px 15px; border:0; border-radius:8px; background:#168aad; color:white;"
+>
+    🛒 سبد خرید
+</button>
+
+</nav>
+
+
+<section class="hero">
+<h2>به تکنو تک خوش آمدید 🛒</h2>
+<p>لوازم دیجیتال کاربردی را با خیال راحت انتخاب کنید.</p>
+</section>
+
+
+<section class="products">
+
+    <!-- فشارسنج -->
+    <div class="product">
+
+        <img src="blood-pressure.jpg"
+             style="width:100%; border-radius:12px;">
+
+        <h3>فشارسنج دیجیتال</h3>
+
+        <div class="price">
+            قیمت: 1,560,000 تومان
+        </div>
+
+       <button onclick="addProduct('فشارسنج دیجیتال')">
+    افزودن به سبد خرید
+</button>
+    </div>
+
+
+    <!-- ساعت دیجیتال -->
+    <div class="product">
+
+    <div id="digitalClock"
+         style="
+            font-size:32px;
+            font-weight:bold;
+            text-align:center;
+            margin:15px 0;
+         ">
+        00:00:00
+    </div>
+
+    <div class="icon">⌚</div>
+
+    <h3>ساعت دیجیتال</h3>
+
+    <div class="price">
+        قیمت: 2,000,000 تومان
+    </div>
+
+    <button onclick="addProduct('ساعت دیجیتال')">
+    افزودن به سبد خرید
+</button>
+</div>
+
+
+    <!-- لوازم دیجیتال -->
+    <div class="product">
+
+        <div class="icon">🔌</div>
+
+        <h3>لوازم دیجیتال</h3>
+
+        <div class="price">
+            قیمت: 1,000,000 تومان
+        </div>
+
+       <button onclick="addProduct('لوازم دیجیتال')">
+    افزودن به سبد خرید
+</button>
+
+    </div>
+
+</section>
+
+<!-- سبد خرید -->
+<div id="cart"
+     style="
+        margin:20px;
+
+        padding:20px;
+        background:white;
+        border-radius:12px;
+     ">
+
+    <h3>🛒 سبد خرید</h3>
+
+    <div id="cartItems">
+        <p>سبد خرید خالی است.</p>
+    </div>
+
+    <h3 id="cartTotal">
+        جمع کل: ۰ تومان
+    </h3>
+
+    <button onclick="clearCart()">
+        🗑️ خالی کردن سبد
+    </button>
+
+</div>
+
+<!-- پنجره مشخصات ساعت دیجیتال -->
+<div id="productModal"
+     style="
+        display:none;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.6);
+        justify-content:center;
+        align-items:center;
+        z-index:1000;
+     ">
+
+    <div style="
+        background:white;
+        padding:30px;
+        border-radius:15px;
+        text-align:center;
+        width:280px;
+        max-width:85%;
+    ">
+
+        <div style="font-size:65px;">⌚</div>
+
+        <h2>ساعت دیجیتال</h2>
+
+        <p>یک ساعت دیجیتال زیبا و کاربردی</p>
+
+        <p style="color:#07855b;font-weight:bold;">
+            قیمت: 2,000,000 تومان
+        </p>
+
+        <button onclick="addToCart(); closeProduct();">
+            افزودن به سبد خرید 🛒
+        </button>
+
+        <br><br>
+
+        <button onclick="closeProduct()">
+            بستن
+        </button>
+
+    </div>
+
+</div>
+
+<section id="contact" style="background-color:#f0f4f8; padding:30px; text-align:center; margin:20px auto; border-radius:12px;">
+    <h2>📞 تماس با ما</h2>
+    <p>به فروشگاه تکنو تک خوش آمدید!</p>
+    <p>برای پرسش درباره محصولات و سفارش‌ها، با ما در ارتباط باشید.</p>
+    <p>📧 <a href="mailto:m.valipour215@gmail.com">ارسال ایمیل به تکنو تک</a></p>
+
+<p>📱 <a href="tel:+989146979102">تماس با تکنو تک</a></p>
+</section>
+<footer>
+© 2026 تکنو تک
+</footer>
+<script>
+const searchBox = document.getElementById("searchBox");
+
+const productCards = document.querySelectorAll(".product");
+
+searchBox.addEventListener("input", function () {
+    const searchText = searchBox.value.trim().toLowerCase();
+
+    productCards.forEach(function (product) {
+        const productName = product.querySelector("h3").textContent.trim().toLowerCase();
+
+        if (productName.includes(searchText)) {
+            product.style.display = "";
+        } else {
+            product.style.display = "none";
+        }
+    });
+});
+var cart = {
+    "فشارسنج دیجیتال": {
+        price: 1560000,
+        quantity: 0
+    },
+    "ساعت دیجیتال": {
+    price: 2000000,
+    quantity: 0
+},
+"لوازم دیجیتال": {
+    price: 1000000,
+    quantity: 0
+}
+};
+
+function addProduct(name) {
+
+    cart[name].quantity =
+        cart[name].quantity + 1;
+
+    updateCart();
+}
+
+function increaseProduct(name) {
+
+    cart[name].quantity =
+        cart[name].quantity + 1;
+
+    updateCart();
+}
+
+function decreaseProduct(name) {
+
+    if (cart[name].quantity > 0) {
+
+        cart[name].quantity =
+            cart[name].quantity - 1;
+    }
+
+    updateCart();
+}
+
+function updateCart() {
+
+    var cartItems =
+        document.getElementById("cartItems");
+
+    var cartTotal =
+        document.getElementById("cartTotal");
+
+    var text = "";
+    var total = 0;
+    var hasProduct = false;
+
+    for (var name in cart) {
+
+        var item = cart[name];
+
+        if (item.quantity > 0) {
+
+            hasProduct = true;
+
+            var itemTotal =
+                item.price * item.quantity;
+
+            total = total + itemTotal;
+
+            text +=
+                "<div style='margin-bottom:15px;padding:12px;background:#f4f7fb;border-radius:10px;'>" +
+
+                "<strong>" + name + "</strong>" +
+
+                "<div style='margin-top:10px;'>" +
+
+                "<button onclick=\"decreaseProduct('" + name + "')\">➖</button>" +
+
+                "<span style='margin:0 15px;font-weight:bold;'>" +
+                item.quantity +
+                "</span>" +
+
+                "<button onclick=\"increaseProduct('" + name + "')\">➕</button>" +
+
+                "</div>" +
+
+                "<div style='margin-top:10px;'>" +
+                "مبلغ: " +
+                itemTotal.toLocaleString('fa-IR') +
+                " تومان" +
+                "</div>" +
+
+                "</div>";
+        }
+    }
+
+    if (hasProduct == false) {
+
+        text = "<p>سبد خرید خالی است.</p>";
+    }
+
+    cartItems.innerHTML = text;
+
+    cartTotal.innerHTML =
+        "جمع کل: " +
+        total.toLocaleString('fa-IR') +
+        " تومان";
+}
+
+function clearCart() {
+
+    for (var name in cart) {
+
+        cart[name].quantity = 0;
+    }
+
+    updateCart();
+}
+
+function showProduct() {
+
+    document.getElementById("productModal").style.display = "flex";
+}
+
+function closeProduct() {
+
+    document.getElementById("productModal").style.display = "none";
+}
+
+function addToCart() {
+
+    addProduct("ساعت دیجیتال");}
+function updateDigitalClock() { const clock = document.getElementById("digitalClock");
+if (clock) { const now = new Date(); const hours = String(now.getHours()).padStart(2, "0"); const minutes = String(now.getMinutes()).padStart(2, "0"); const seconds = String(now.getSeconds()).padStart(2, "0"); clock.textContent = hours + ":" + minutes + ":" + seconds; } 
+}
+updateDigitalClock(); setInterval(updateDigitalClock, 1000);
+
+</script>
+<script>
+
+
+</script>
+</body>
+</html>
