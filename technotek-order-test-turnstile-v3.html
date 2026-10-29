@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="description" content="تکنو تک؛ فروشگاه اینترنتی لوازم دیجیتال و ابزارهای کاربردی. مشاهده محصولات، بررسی قیمت‌ها و انتخاب آسان کالاهای مورد نیاز شما.">
+<meta name="google-site-verification" content="bzV4fc02X6uAV-IIUSGNxSz81PtcwCeVlkKiil4Ag70">
+
+<title>تکنو تک</title>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+<!-- نسخهٔ آزمایشی Turnstile v3؛ فقط برای آزمون. روی سایت اصلی منتشر نکنید. -->
+<meta name="google-site-verification" content="bzV4fc02X6uAV-IIUSGNxSz81PtcwCeVlkKiil4Ag70" />
+<style>
+body{
+    margin:0;
+    font-family:Tahoma,Arial,sans-serif;
+    background:#f4f7fb;
+    color:#172033;
+}
+
+header{
+    background:#102a43;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+    font-size:32px;
+}
+
+header p{
+    color:#b9d7ff;
+}
+nav { background: white; padding: 18px 15px; text-align: center; box-shadow: 0 4px 15px rgba(16, 42, 67, 0.10); border-radius: 0 0 15px 15px; }
+nav a { color: #102a43; text-decoration: none; margin: 0 12px; font-weight: bold; display: inline-block; padding: 8px 12px; border-radius: 8px; transition: all 0.3s ease; }
+nav a:hover { background: #e8f7f0; color: #07855b; transform: translateY(-2px); }
+
+.hero{
+    background:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+.products { display: flex; justify-content: center; align-items: stretch; gap: 25px; flex-wrap: wrap; padding: 35px 20px; }
+.product { background: linear-gradient(145deg, #ffffff, #f4f8fc); width: 230px; padding: 22px; text-align: center; border-radius: 20px; box-shadow: 0 6px 22px rgba(16, 42, 67, 0.12); border: 1px solid #e5edf5; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.product:hover { transform: translateY(-7px); box-shadow: 0 12px 28px rgba(16, 42, 67, 0.2); }
+
+.icon{
+    font-size:60px;
+}
+
+.price { color: #07855b; font-size: 19px; font-weight: bold; margin: 18px 0; padding: 8px; background: #e8f7f0; border-radius: 10px; display: inline-block; }
+
+
+button { background: linear-gradient(135deg, #168aad, #126782); color: white; border: none; padding: 12px 20px; border-radius: 10px; cursor: pointer; font-size: 15px; font-weight: bold; box-shadow: 0 4px 10px rgba(22, 138, 173, 0.2); transition: all 0.25s ease; }
+button:hover { background: linear-gradient(135deg, #126782, #0b4f63); transform: translateY(-2px); box-shadow: 0 7px 15px rgba(22, 138, 173, 0.3); }
+button:active { transform: scale(0.97); }
+footer{
+    margin-top:30px;
+    background:#102a43;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+}
+.product img { transition: transform 0.3s ease; }
+.product img:hover { transform: scale(1.08); }
+header { background: linear-gradient(135deg, #102a43, #168aad); color: white; text-align: center; padding: 30px 20px; border-radius: 0 0 20px 20px; box-shadow: 0 5px 18px rgba(16, 42, 67, 0.2); }
+header h1 { font-size: 42px; font-weight: 900; margin: 0 0 10px; letter-spacing: 1px; text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3); }
+header p { font-size: 16px; margin: 0; opacity: 0.9; }
+#digitalClock { background: #101820; color: #39ff14; padding: 18px 10px; border-radius: 14px; border: 2px solid #39ff14; box-shadow: 0 0 12px rgba(57, 255, 20, 0.35); font-family: monospace; letter-spacing: 3px; text-shadow: 0 0 8px rgba(57, 255, 20, 0.8); }
+
+.checkout-panel { margin: 20px; padding: 22px; background: #fff; border-radius: 14px; box-shadow: 0 4px 15px rgba(16,42,67,.10); border: 1px solid #e2e8f0; }
+.checkout-panel[hidden] { display: none !important; }
+.checkout-panel h3 { color: #102a43; }
+.checkout-panel label { display: block; margin: 14px 0 6px; font-weight: bold; }
+.checkout-panel input, .checkout-panel textarea { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; font: inherit; }
+.checkout-panel textarea { min-height: 90px; resize: vertical; }
+.checkout-summary { background: #f4f8fc; padding: 12px; border-radius: 8px; line-height: 1.9; white-space: pre-line; }
+.order-note { color: #526579; font-size: 13px; line-height: 1.9; }
+#orderMessage { line-height: 1.9; overflow-wrap: anywhere; }
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>تکنو تک</h1>
+<p>فروشگاه لوازم دیجیتال و ابزارهای کاربردی</p>
+</header>
+
+<nav>
+    <a href="#">🏠 خانه</a>
+    <a href="#">🛍️ محصولات</a>
+    <a href="#">🔥 تخفیف‌ها</a>
+    <a href="#contact">📞 تماس با ما</a>
+    <input id="searchBox" type="text" placeholder="جستجوی محصول..." style="padding:10px; border:1px solid #ddd; border-radius:8px; margin-right:15px;">
+
+    <button
+    onclick="document.getElementById('cart').scrollIntoView({behavior:'smooth'})"
+    style="padding:10px 15px; border:0; border-radius:8px; background:#168aad; color:white;"
+>
+    🛒 سبد خرید
+</button>
+
+</nav>
+
+
+<section class="hero">
+<h2>به تکنو تک خوش آمدید 🛒</h2>
+<p>لوازم دیجیتال کاربردی را با خیال راحت انتخاب کنید.</p>
+</section>
+
+
+<section class="products">
+
+    <!-- فشارسنج -->
+    <div class="product">
+
+        <img src="https://eosvvviaaetyicyrfayw.supabase.co/storage/v1/object/public/product-images/blood1.jpg" alt="فشارسنج دیجیتال" onmouseover="this.src='https://eosvvviaaetyicyrfayw.supabase.co/storage/v1/object/public/product-images/blood2.jpg'" onmouseout="this.src='https://eosvvviaaetyicyrfayw.supabase.co/storage/v1/object/public/product-images/blood1.jpg'"
+            style="width:100%; border-radius:12px;">
+
+        <h3>فشارسنج دیجیتال</h3>
+
+        <div class="price">
+            قیمت: 1,651,000 تومان
+        </div>
+
+        <button onclick="addProduct('فشارسنج دیجیتال')">
+            افزودن به سبد خرید
+        </button>
+
+    </div>
+
+
+
+    <!-- ساعت دیجیتال -->
+    <div class="product">
+
+    <div id="digitalClock"
+         style="
+            font-size:32px;
+            font-weight:bold;
+            text-align:center;
+            margin:15px 0;
+         ">
+        00:00:00
+    </div>
+
+
+<img
+  src="https://eosvvviaaetyicyrfayw.supabase.co/storage/v1/object/public/product-images/oclock.jpg"
+  alt="ساعت دیجیتال"
+  class="product-hover-image"
+  onmouseover="this.src='https://eosvvviaaetyicyrfayw.supabase.co/storage/v1/object/public/product-images/oclock2.jpg'"
+  onmouseout="this.src='https://eosvvviaaetyicyrfayw.supabase.co/storage/v1/object/public/product-images/oclock.jpg'"
+  style="width:100%; max-width:250px; height:200px; object-fit:contain; display:block; margin:0 auto 15px;"
+>
+
+    <h3>ساعت دیجیتال</h3>
+
+    <div class="price">
+        قیمت: 2,000,000 تومان
+    </div>
+
+    <button onclick="addProduct('ساعت دیجیتال')">
+    افزودن به سبد خرید
+</button>
+</div>
+
+
+    <!-- لوازم دیجیتال -->
+    <div class="product">
+
+      <img src="https://eosvvviaaetyicyrfayw.supabase.co/storage/v1/object/public/product-images/fangardani.jpg" alt="لوازم دیجیتال" style="width:100%; max-width:250px; height:200px; object-fit:contain; display:block; margin:0 auto 15px;">
+
+        <h3>لوازم دیجیتال</h3>
+
+        <div class="price">
+            قیمت: 1,000,000 تومان
+        </div>
+
+       <button onclick="addProduct('لوازم دیجیتال')">
+    افزودن به سبد خرید
+</button>
+
+    </div>
+    <!-- پنکه رومیزی مه‌پاش -->
+    <div class="product">
+       <img src="https://eosvvviaaetyicyrfayw.supabase.co/storage/v1/object/public/product-images/Mini-Cooling-Fan-4.jpg" alt="پنکه رومیزی مه‌پاش" onmouseover="this.src='https://eosvvviaaetyicyrfayw.supabase.co/storage/v1/object/public/product-images/Mini-Cooling-Fan-5.jpg'" onmouseout="this.src='https://eosvvviaaetyicyrfayw.supabase.co/storage/v1/object/public/product-images/Mini-Cooling-Fan-4.jpg'" style="width:100%; max-width:250px; height:200px; object-fit:contain; display:block; margin:0 auto 15px;">
+        <h3>پنکه رومیزی مه‌پاش</h3>
+        <p>پنکه کوچک با قابلیت مه‌پاشی</p>
+        <div class="price">
+            قیمت: 2,125,000 تومان
+        </div>
+        <button onclick="addProduct('پنکه رومیزی مه‌پاش')">
+            افزودن به سبد خرید
+        </button>
+    </div>
+
+    <!-- چراغ شارژی: محصول پنجم در حالت جایگزین آفلاین -->
+    <div class="product">
+        <img src="https://eosvvviaaetyicyrfayw.supabase.co/storage/v1/object/public/product-images/cherakh-sharjhi1.jpg"
+             alt="چراغ شارژی"
+             style="width:100%; max-width:250px; height:200px; object-fit:contain; display:block; margin:0 auto 15px;">
+        <h3>چراغ شارژی</h3>
+        <p>محصول زیبا و پر نور با کیفیت و بادوام برای گردش ها و پارک ها</p>
+        <div class="price">قیمت: 1,700,000 تومان</div>
+        <button onclick="addProduct('چراغ شارژی')">افزودن به سبد خرید</button>
+    </div>
+</section>
+
+<!-- سبد خرید -->
+<div id="cart"
+     style="
+        margin:20px;
+
+        padding:20px;
+        background:white;
+        border-radius:12px;
+     ">
+
+    <h3>🛒 سبد خرید</h3>
+
+    <div id="cartItems">
+        <p>سبد خرید خالی است.</p>
+    </div>
+
+    <h3 id="cartTotal">
+        جمع کل: ۰ تومان
+    </h3>
+
+    <button type="button" onclick="clearCart()">
+        🗑️ خالی کردن سبد
+    </button>
+    <button type="button" id="checkoutButton">
+        ✅ تکمیل و ثبت سفارش
+    </button>
+    <p id="checkoutNotice" role="status" aria-live="polite" class="order-note"></p>
+
+</div>
+
+<section id="checkoutPanel" class="checkout-panel" hidden>
+    <h2>ثبت سفارش تکنوتک</h2>
+    <p class="order-note">اطلاعات تماس و نشانی برای پیگیری سفارش در سامانهٔ تکنوتک ذخیره می‌شود. فعلاً پرداخت اینترنتی فعال نیست؛ پس از ثبت سفارش، برای هماهنگی نهایی با شما تماس گرفته می‌شود.</p>
+    <h3>خلاصه سفارش</h3>
+    <div id="checkoutSummary" class="checkout-summary">سبد خرید را بررسی می‌کنیم...</div>
+    <form id="checkoutForm">
+        <label for="customerName">نام و نام خانوادگی</label>
+        <input id="customerName" name="customerName" autocomplete="name" maxlength="100" required minlength="2" placeholder="نام تحویل‌گیرنده">
+
+        <label for="customerPhone">شماره تماس</label>
+        <input id="customerPhone" name="customerPhone" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" required pattern="[0-9۰-۹٠-٩+() -]{7,20}" title="شماره تماس معتبر وارد کنید" placeholder="مثلاً 09123456789">
+
+        <label for="customerCity">شهر</label>
+        <input id="customerCity" name="customerCity" autocomplete="address-level2" maxlength="100" required minlength="2" placeholder="مثلاً تبریز">
+
+        <label for="customerAddress">نشانی کامل تحویل</label>
+        <textarea id="customerAddress" name="customerAddress" autocomplete="street-address" maxlength="1000" minlength="10" required placeholder="استان، شهر، خیابان، کوچه، پلاک و واحد"></textarea>
+
+        <label for="customerNotes">توضیحات تکمیلی (اختیاری)</label>
+        <textarea id="customerNotes" name="customerNotes" maxlength="2000" placeholder="زمان مناسب تماس یا توضیح لازم برای تحویل"></textarea>
+
+        <div style="margin:18px 0;padding:12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;">
+            <p class="order-note" style="margin-top:0;">برای جلوگیری از ارسال خودکار سفارش، تأیید ضدربات را کامل کن.</p>
+            <div id="turnstile-container"></div>
+        </div>
+
+        <label style="display:flex;align-items:flex-start;gap:9px;font-weight:normal;line-height:1.8;">
+            <input id="orderConsent" type="checkbox" required style="width:auto;margin-top:6px;flex-shrink:0;">
+            <span>موافقم اطلاعات واردشده برای ثبت و پیگیری این سفارش استفاده شود. می‌دانم پرداخت اینترنتی در این مرحله فعال نیست.</span>
+        </label>
+
+        <button type="submit" id="submitOrderButton">ثبت سفارش</button>
+        <button type="button" id="cancelCheckoutButton" style="background:#526579;">بازگشت به سبد خرید</button>
+    </form>
+    <p id="orderMessage" role="status" aria-live="polite"></p>
+</section>
+
+<!-- پنجره مشخصات ساعت دیجیتال -->
+<div id="productModal"
+     style="
+        display:none;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.6);
+        justify-content:center;
+        align-items:center;
+        z-index:1000;
+     ">
+
+    <div style="
+        background:white;
+        padding:30px;
+        border-radius:15px;
+        text-align:center;
+        width:280px;
+        max-width:85%;
+    ">
+
+        <div style="font-size:65px;">⌚</div>
+
+        <h2>ساعت دیجیتال</h2>
+
+        <p>یک ساعت دیجیتال زیبا و کاربردی</p>
+
+        <p style="color:#07855b;font-weight:bold;">
+            قیمت: 2,000,000 تومان
+        </p>
+
+        <button onclick="addToCart(); closeProduct();">
+            افزودن به سبد خرید 🛒
+        </button>
+
+        <br><br>
+
+        <button onclick="closeProduct()">
+            بستن
+        </button>
+
+    </div>
+
+</div>
+
+<section id="contact" style="background-color:#f0f4f8; padding:30px; text-align:center; margin:20px auto; border-radius:12px;">
+    <h2>📞 تماس با ما</h2>
+    <p>به فروشگاه تکنو تک خوش آمدید!</p>
+    <p>برای پرسش درباره محصولات و سفارش‌ها، با ما در ارتباط باشید.</p>
+    <p>📧 <a href="mailto:m.valipour215@gmail.com">ارسال ایمیل به تکنو تک</a></p>
+
+<p>📱 <a href="tel:+989146979102">تماس با تکنو تک</a></p>
+</section>
+<footer>
+© 2026 تکنو تک
+</footer>
+<script>
+const searchBox = document.getElementById("searchBox");
+
+// Dynamic search: works both for local fallback cards and cards loaded from Supabase.
+function filterProducts() {
+    const searchText = searchBox.value.trim().toLocaleLowerCase();
+    document.querySelectorAll(".products .product").forEach(function (product) {
+        const heading = product.querySelector("h3");
+        const productName = heading ? heading.textContent.trim().toLocaleLowerCase() : "";
+        product.style.display = productName.includes(searchText) ? "" : "none";
+    });
+}
+
+searchBox.addEventListener("input", filterProducts);
+var cart = {
+    "فشارسنج دیجیتال": {
+        price: 1651000,
+        quantity: 0
+    },
+    "ساعت دیجیتال": {
+    price: 2000000,
+    quantity: 0
+},
+"لوازم دیجیتال": {
+    price: 1000000,
+    quantity: 0
+},
+"پنکه رومیزی مه‌پاش": {
+    price: 2125000,
+    quantity: 0
+},
+"چراغ شارژی": {
+    price: 1700000,
+    quantity: 0
+}
+};
+
+function addProduct(name) {
+
+    cart[name].quantity =
+        cart[name].quantity + 1;
+
+    updateCart();
+}
+
+function increaseProduct(name) {
+
+    cart[name].quantity =
+        cart[name].quantity + 1;
+
+    updateCart();
+}
+
+function decreaseProduct(name) {
+
+    if (cart[name].quantity > 0) {
+
+        cart[name].quantity =
+            cart[name].quantity - 1;
+    }
+
+    updateCart();
+}
+
+function updateCart() {
+    const cartItems = document.getElementById("cartItems");
+    const cartTotal = document.getElementById("cartTotal");
+    cartItems.replaceChildren();
+
+    let total = 0;
+    let hasProduct = false;
+
+    for (const key of Object.keys(cart)) {
+        const item = cart[key];
+        if (!item || item.quantity <= 0) continue;
+
+        hasProduct = true;
+        const itemTotal = Number(item.price) * Number(item.quantity);
+        total += itemTotal;
+
+        const row = document.createElement("div");
+        row.style.cssText = "margin-bottom:15px;padding:12px;background:#f4f7fb;border-radius:10px;";
+
+        const title = document.createElement("strong");
+        title.textContent = item.displayName || key;
+        row.appendChild(title);
+
+        const controls = document.createElement("div");
+        controls.style.marginTop = "10px";
+
+        const decreaseButton = document.createElement("button");
+        decreaseButton.type = "button";
+        decreaseButton.textContent = "➖";
+        decreaseButton.addEventListener("click", () => decreaseProduct(key));
+
+        const quantity = document.createElement("span");
+        quantity.style.cssText = "margin:0 15px;font-weight:bold;";
+        quantity.textContent = String(item.quantity);
+
+        const increaseButton = document.createElement("button");
+        increaseButton.type = "button";
+        increaseButton.textContent = "➕";
+        increaseButton.addEventListener("click", () => increaseProduct(key));
+
+        controls.append(decreaseButton, quantity, increaseButton);
+        row.appendChild(controls);
+
+        const amount = document.createElement("div");
+        amount.style.marginTop = "10px";
+        amount.textContent = "مبلغ: " + itemTotal.toLocaleString("fa-IR") + " تومان";
+        row.appendChild(amount);
+
+        cartItems.appendChild(row);
+    }
+
+    if (!hasProduct) {
+        const emptyMessage = document.createElement("p");
+        emptyMessage.textContent = "سبد خرید خالی است.";
+        cartItems.appendChild(emptyMessage);
+    }
+
+    cartTotal.textContent = "جمع کل: " + total.toLocaleString("fa-IR") + " تومان";
+    if (typeof window.refreshTechnotekCheckoutSummary === "function") {
+        window.refreshTechnotekCheckoutSummary();
+    }
+}
+
+function clearCart() {
+
+    for (var name in cart) {
+
+        cart[name].quantity = 0;
+    }
+
+    updateCart();
+}
+
+function showProduct() {
+
+    document.getElementById("productModal").style.display = "flex";
+}
+
+function closeProduct() {
+
+    document.getElementById("productModal").style.display = "none";
+}
+
+function addToCart() {
+    const key = window.technotekCartKeyByName && window.technotekCartKeyByName.get("ساعت دیجیتال");
+    addProduct(key || "ساعت دیجیتال");
+}
+function updateDigitalClock() { const clock = document.getElementById("digitalClock");
+if (clock) { const now = new Date(); const hours = String(now.getHours()).padStart(2, "0"); const minutes = String(now.getMinutes()).padStart(2, "0"); const seconds = String(now.getSeconds()).padStart(2, "0"); clock.textContent = hours + ":" + minutes + ":" + seconds; } 
+}
+updateDigitalClock(); setInterval(updateDigitalClock, 1000);
+
+</script>
+<script>
+
+
+</script>
+
+<section id="about-us" style="max-width: 900px; margin: 30px auto; padding: 25px; background: #f7f9fc; border-radius: 14px; line-height: 2; color: #333; text-align: right; direction: rtl;">
+  <h2 style="color: #168aad; text-align: center;">درباره تکنوتک</h2>
+
+  <p><strong>سلام! به تکنوتک خوش آمدید!</strong></p>
+
+  <p>ما در تکنوتک تلاش می‌کنیم لوازم جانبی موبایل و محصولات کاربردی دیجیتال را با قیمت مناسب و کیفیت مطلوب در اختیار شما قرار دهیم.</p>
+
+  <p>از قاب‌های شیک و محافظ گرفته تا شارژرهای مطمئن، هندزفری‌های باکیفیت و دیگر لوازم موردنیاز موبایل، هدف ما این است که خریدی آسان، لذت‌بخش و مطمئن را تجربه کنید.</p>
+
+  <p>ما در تکنوتک فقط به فروش محصولات فکر نمی‌کنیم؛ رضایت شما، کیفیت کالاها و ایجاد تجربه‌ای خوب از خرید، از اولویت‌های ماست.</p>
+
+  <p>امیدواریم با انتخاب تکنوتک، خریدی رضایت‌بخش داشته باشید و ما را به‌عنوان همراهی قابل اعتماد در خریدهای دیجیتال خود بشناسید.</p>
+
+  <p style="text-align: center; font-weight: bold; color: #168aad;">تکنوتک؛ همراه همیشگی خانه‌های شما!</p>
+</section>
+
+  <section id="why-technotek" style="max-width: 900px; margin: 30px auto; padding: 25px; background: #f7f9fc; border-radius: 14px; line-height: 2; color: #333; text-align: right; direction: rtl;">
+
+  <h2 style="color: #168aad; text-align: center;">چرا فروشگاه تکنوتک؟</h2>
+
+  <p>در تکنوتک تلاش می‌کنیم تجربه‌ای ساده و دلپذیر از انتخاب محصولات دیجیتال و لوازم جانبی موبایل برای شما فراهم کنیم.</p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+
+    <div style="background: #fff; padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0;">
+      <h3 style="color: #168aad; margin-top: 0;">📱 تنوع محصولات</h3>
+      <p>محصولات کاربردی دیجیتال و لوازم جانبی موبایل را بررسی کنید و گزینه مناسب خود را پیدا کنید.</p>
+    </div>
+
+    <div style="background: #fff; padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0;">
+      <h3 style="color: #168aad; margin-top: 0;">⭐ توجه به کیفیت</h3>
+      <p>مشخصات و ویژگی‌های هر کالا را بررسی کنید تا انتخاب آگاهانه‌تری داشته باشید.</p>
+    </div>
+
+    <div style="background: #fff; padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0;">
+      <h3 style="color: #168aad; margin-top: 0;">💰 مقایسه قیمت‌ها</h3>
+      <p>قیمت‌های نمایش‌داده‌شده را مقایسه کنید و متناسب با نیاز و بودجه خود تصمیم بگیرید.</p>
+    </div>
+
+    <div style="background: #fff; padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0;">
+      <h3 style="color: #168aad; margin-top: 0;">🛍️ انتخاب آسان</h3>
+      <p>هدف ما این است که بررسی محصولات و پیدا کردن کالای موردنظر برای شما ساده باشد.</p>
+    </div>
+
+  </div>
+
+  <h2 style="color: #168aad; text-align: center; margin-top: 35px;">پرسش‌های متداول</h2>
+
+  <details style="background: #fff; margin: 12px 0; padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0;">
+    <summary style="cursor: pointer; font-weight: bold; color: #168aad;">تکنوتک چه محصولاتی ارائه می‌کند؟</summary>
+    <p>تکنوتک بر لوازم جانبی موبایل و محصولات کاربردی دیجیتال تمرکز دارد. برای دیدن کالاهای موجود، بخش محصولات سایت را بررسی کنید.</p>
+  </details>
+
+  <details style="background: #fff; margin: 12px 0; padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0;">
+    <summary style="cursor: pointer; font-weight: bold; color: #168aad;">چطور محصول موردنظرم را پیدا کنم؟</summary>
+    <p>از بخش محصولات و در صورت وجود، کادر جست‌وجوی سایت استفاده کنید تا کالای موردنظر خود را راحت‌تر پیدا کنید.</p>
+  </details>
+
+  <details style="background: #fff; margin: 12px 0; padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0;">
+    <summary style="cursor: pointer; font-weight: bold; color: #168aad;">قیمت محصولات را کجا ببینم؟</summary>
+    <p>قیمت هر کالا را در قسمت مربوط به همان محصول بررسی کنید. اگر قیمت درج نشده است، پیش از خرید آن را تأیید کنید.</p>
+  </details>
+
+  <details style="background: #fff; margin: 12px 0; padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0;">
+    <summary style="cursor: pointer; font-weight: bold; color: #168aad;">روش پرداخت و ثبت سفارش چگونه است؟</summary>
+    <p>روش پرداخت و ثبت سفارش به امکانات فعال فروشگاه بستگی دارد. پیش از پرداخت، از روش‌های فعال و شرایط سفارش اطمینان حاصل کنید.</p>
+  </details>
+
+</section>  
+<!-- نسخهٔ آزمایشی: پس از اتصال موفق، فهرست محصولات از Supabase خوانده می‌شود؛ در صورت خطا کارت‌های محلی حفظ می‌شوند. -->
+<p id="supabaseProductsStatus" role="status" aria-live="polite" style="text-align:center;padding:0 16px;color:#52606d;"></p>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+window.technotekCatalogLoaded = false;
+window.technotekSupabaseClient = null;
+(async function loadDatabaseManagedCatalog() {
+    const status = document.getElementById("supabaseProductsStatus");
+    const productsSection = document.querySelector(".products");
+    const searchBox = document.getElementById("searchBox");
+    const SUPABASE_URL = "https://eosvvviaaetyicyrfayw.supabase.co";
+    const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_Q0IUDRT8eAMn0v3yY4N4jg_f5liIu8D";
+
+    // تصاویر شناخته‌شدهٔ محصولات در Storage؛ اگر image_url در جدول خالی یا خراب باشد، از این آدرس‌ها استفاده می‌شود.
+    const PRODUCT_IMAGES = {
+        "فشارسنج دیجیتال": SUPABASE_URL + "/storage/v1/object/public/product-images/blood1.jpg",
+        "ساعت دیجیتال": SUPABASE_URL + "/storage/v1/object/public/product-images/oclock.jpg",
+        "لوازم دیجیتال": SUPABASE_URL + "/storage/v1/object/public/product-images/fangardani.jpg",
+        "پنکه رومیزی مه‌پاش": SUPABASE_URL + "/storage/v1/object/public/product-images/Mini-Cooling-Fan-4.jpg",
+        "چراغ شارژی": SUPABASE_URL + "/storage/v1/object/public/product-images/cherakh-sharjhi1.jpg",
+        "تب سنج": SUPABASE_URL + "/storage/v1/object/public/product-images/tabsanj.jpg",
+        "تب‌سنج": SUPABASE_URL + "/storage/v1/object/public/product-images/tabsanj.jpg"
+    };
+    const HOVER_IMAGES = {
+        "فشارسنج دیجیتال": SUPABASE_URL + "/storage/v1/object/public/product-images/blood2.jpg",
+        "ساعت دیجیتال": SUPABASE_URL + "/storage/v1/object/public/product-images/oclock2.jpg",
+        "پنکه رومیزی مه‌پاش": SUPABASE_URL + "/storage/v1/object/public/product-images/Mini-Cooling-Fan-5.jpg"
+    };
+
+    status.textContent = "در حال بارگذاری فهرست محصولات از Supabase...";
+
+    function canonicalProductName(value) {
+        const normalized = String(value || "").replace(/[\u200c\u200f\u202a-\u202e]/g, "").replace(/\s+/g, " ").trim();
+        const bases = ["فشارسنج دیجیتال", "ساعت دیجیتال", "لوازم دیجیتال", "پنکه رومیزی مه‌پاش", "چراغ شارژی", "تب سنج", "تب‌سنج"];
+        return bases.find(base => normalized.includes(base)) || normalized;
+    }
+
+    function mappedImageUrl(map, productName) {
+        const normalizedName = canonicalProductName(productName);
+        const key = Object.keys(map).find(candidate => canonicalProductName(candidate) === normalizedName);
+        return key ? map[key] : "";
+    }
+
+    function safeImageUrl(value) {
+        try {
+            const url = new URL(String(value || ""), window.location.href);
+            return url.protocol === "https:" ? url.href : "";
+        } catch (_) {
+            return "";
+        }
+    }
+
+    function makeClock() {
+        const clock = document.createElement("div");
+        clock.id = "digitalClock";
+        clock.style.cssText = "font-size:32px;font-weight:bold;text-align:center;margin:15px 0;";
+        clock.textContent = "00:00:00";
+        return clock;
+    }
+
+    function addDatabaseCard(product, cartKey) {
+        const name = String(product.name || "").trim();
+        const price = Number(product.price);
+        const databaseImageUrl = safeImageUrl(product.image_url);
+        const fallbackImageUrl = safeImageUrl(mappedImageUrl(PRODUCT_IMAGES, name));
+        const imageUrl = databaseImageUrl || fallbackImageUrl;
+        const card = document.createElement("div");
+        card.className = "product supabase-product-card";
+        card.dataset.supabaseProductId = String(product.id);
+
+        // ساعت دیجیتال، مانند نسخهٔ قبلی، ساعت زنده را داخل کارت خود دارد.
+        if (canonicalProductName(name) === "ساعت دیجیتال") {
+            card.appendChild(makeClock());
+        }
+
+        if (imageUrl) {
+            const image = document.createElement("img");
+            let activeBaseImageUrl = imageUrl;
+            let fallbackTried = !fallbackImageUrl || imageUrl === fallbackImageUrl;
+            image.src = imageUrl;
+            image.alt = name;
+            image.loading = "lazy";
+            image.referrerPolicy = "no-referrer";
+            image.onerror = () => {
+                // اگر آدرس ذخیره‌شده در جدول خراب بود، یک بار از تصویر شناخته‌شدهٔ Storage استفاده کن.
+                if (image.dataset.showingHover === "true") {
+                    image.dataset.showingHover = "false";
+                    image.src = activeBaseImageUrl;
+                    return;
+                }
+                if (!fallbackTried && fallbackImageUrl) {
+                    fallbackTried = true;
+                    activeBaseImageUrl = fallbackImageUrl;
+                    image.src = fallbackImageUrl;
+                    return;
+                }
+                image.replaceWith(Object.assign(document.createElement("div"), {
+                    className: "icon",
+                    textContent: "📦"
+                }));
+            };
+            const hoverUrl = safeImageUrl(mappedImageUrl(HOVER_IMAGES, name));
+            if (hoverUrl) {
+                image.addEventListener("mouseenter", () => {
+                    image.dataset.showingHover = "true";
+                    image.src = hoverUrl;
+                });
+                image.addEventListener("mouseleave", () => {
+                    image.dataset.showingHover = "false";
+                    image.src = activeBaseImageUrl;
+                });
+            }
+            card.appendChild(image);
+        } else {
+            const placeholder = document.createElement("div");
+            placeholder.className = "icon";
+            placeholder.textContent = "📦";
+            card.appendChild(placeholder);
+        }
+
+        const heading = document.createElement("h3");
+        heading.textContent = name;
+        card.appendChild(heading);
+
+        const description = String(product.description || "").trim();
+        if (description) {
+            const paragraph = document.createElement("p");
+            paragraph.className = "product-description";
+            paragraph.textContent = description;
+            card.appendChild(paragraph);
+        }
+
+        const priceElement = document.createElement("div");
+        priceElement.className = "price";
+        priceElement.textContent = "قیمت: " + price.toLocaleString("fa-IR", { maximumFractionDigits: 2 }) + " تومان";
+        card.appendChild(priceElement);
+
+        const addButton = document.createElement("button");
+        addButton.type = "button";
+        addButton.textContent = "افزودن به سبد خرید";
+        addButton.addEventListener("click", () => addProduct(cartKey));
+        card.appendChild(addButton);
+        productsSection.appendChild(card);
+    }
+
+    try {
+        if (!window.supabase || typeof window.supabase.createClient !== "function") {
+            throw new Error("کتابخانهٔ اتصال بارگذاری نشد.");
+        }
+        const client = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+        window.technotekSupabaseClient = client;
+        const { data, error } = await client
+            .from("products")
+            .select("id, name, price, image_url, description, created_at")
+            .order("created_at", { ascending: true });
+        if (error) throw error;
+
+        const products = (data || []).filter(product => {
+            const name = String(product.name || "").trim();
+            const price = Number(product.price);
+            return name && String(product.id ?? "") && Number.isFinite(price) && price >= 0;
+        });
+
+        // اگر جدول خالی باشد، به‌جای خالی کردن فروشگاه، کارت‌های محلی فعلی را حفظ می‌کنیم.
+        if (products.length === 0) {
+            status.textContent = "اتصال به Supabase برقرار شد، اما محصولی در جدول پیدا نشد؛ محصولات محلی برای جلوگیری از خالی ماندن فروشگاه حفظ شدند.";
+            return;
+        }
+
+        // هنگام بارگذاری، اگر کاربر پیش از دریافت پاسخ چیزی به سبد افزوده باشد، مقدار همان‌نام را نگه می‌داریم.
+        const previousQuantities = {};
+        for (const key of Object.keys(cart)) {
+            if (cart[key] && Number(cart[key].quantity) > 0) {
+                const alias = canonicalProductName(cart[key].displayName || key);
+                previousQuantities[alias] = (previousQuantities[alias] || 0) + Number(cart[key].quantity);
+            }
+        }
+
+        // پس از خواندن موفق دیتابیس، کارت‌های سخت‌نویسی‌شده را با فهرست واقعی دیتابیس جایگزین می‌کنیم.
+        productsSection.replaceChildren();
+        const cartKeyByName = new Map();
+        const usedCartKeys = new Set();
+
+        for (const product of products) {
+            const name = String(product.name || "").trim();
+            const canonicalName = canonicalProductName(name);
+            const cartKey = "supabase_product_" + String(product.id);
+            const previousQuantity = previousQuantities[canonicalName] ?? previousQuantities[name] ?? 0;
+            cart[cartKey] = {
+                price: Number(product.price),
+                quantity: previousQuantity,
+                displayName: name,
+                productId: String(product.id)
+            };
+            cartKeyByName.set(name, cartKey);
+            cartKeyByName.set(canonicalName, cartKey);
+            usedCartKeys.add(cartKey);
+            addDatabaseCard(product, cartKey);
+        }
+
+        // خالی‌کردن کلیدهای قدیمیِ ثابت، تا یک کالا دو بار در سبد حساب نشود.
+        const legacyNames = ["فشارسنج دیجیتال", "ساعت دیجیتال", "لوازم دیجیتال", "پنکه رومیزی مه‌پاش"];
+        for (const name of legacyNames) {
+            if (cart[name]) {
+                cart[name].quantity = 0;
+            }
+        }
+        window.technotekCartKeyByName = cartKeyByName;
+
+        // هماهنگ‌کردن دکمهٔ قدیمیِ افزودن ساعت (اگر در نسخهٔ فعلی از آن استفاده شود).
+        window.addToCart = function () {
+            const key = window.technotekCartKeyByName && window.technotekCartKeyByName.get("ساعت دیجیتال");
+            addProduct(key || "ساعت دیجیتال");
+            if (typeof closeProduct === "function") closeProduct();
+        };
+
+        // Search listener above queries the current DOM, including the database-loaded catalog.
+        filterProducts();
+
+        window.technotekCatalogLoaded = true;
+        updateCart();
+        status.textContent = "فهرست از Supabase خوانده شد؛ " + products.length.toLocaleString("fa-IR") + " محصول از دیتابیس نمایش داده شد.";
+    } catch (error) {
+        window.technotekCatalogLoaded = false;
+        console.error("Supabase catalog test failed:", error);
+        const detail = error && error.message ? " جزئیات: " + error.message : "";
+        status.textContent = "بارگذاری محصولات از Supabase انجام نشد؛ کارت‌های محلی فعلی حفظ شدند." + detail;
+    }
+})();
+</script>
+
+<script>
+(function setupTechnotekCheckout() {
+    const checkoutButton = document.getElementById("checkoutButton");
+    const checkoutPanel = document.getElementById("checkoutPanel");
+    const checkoutForm = document.getElementById("checkoutForm");
+    const checkoutNotice = document.getElementById("checkoutNotice");
+    const checkoutSummary = document.getElementById("checkoutSummary");
+    const orderMessage = document.getElementById("orderMessage");
+    const submitButton = document.getElementById("submitOrderButton");
+    let submitting = false;
+    let turnstileWidgetId = null;
+    let currentTurnstileToken = "";
+    let turnstileRenderPromise = null;
+
+    // The checkout panel starts hidden. Wait briefly for the Cloudflare API instead of
+    // failing immediately if its deferred script has not finished loading yet.
+    function renderTurnstileIfNeeded() {
+        if (turnstileWidgetId !== null) return Promise.resolve(turnstileWidgetId);
+        if (turnstileRenderPromise) return turnstileRenderPromise;
+
+        turnstileRenderPromise = new Promise((resolve, reject) => {
+            const startedAt = Date.now();
+            const tryRender = () => {
+                if (!window.turnstile || typeof window.turnstile.render !== "function") {
+                    if (Date.now() - startedAt >= 12000) {
+                        turnstileRenderPromise = null;
+                        reject(new Error("ابزار ضدربات از Cloudflare بارگذاری نشد. اتصال به challenges.cloudflare.com را بررسی کن؛ اگر این آدرس در مرورگرت باز نمی‌شود، شبکه آن را مسدود کرده است."));
+                        return;
+                    }
+                    window.setTimeout(tryRender, 250);
+                    return;
+                }
+
+                window.turnstile.ready(() => {
+                    if (turnstileWidgetId !== null) {
+                        resolve(turnstileWidgetId);
+                        return;
+                    }
+                    const container = document.getElementById("turnstile-container");
+                    if (!container) {
+                        turnstileRenderPromise = null;
+                        reject(new Error("جای نمایش ابزار ضدربات پیدا نشد. فرم سفارش را ببند و دوباره باز کن."));
+                        return;
+                    }
+                    try {
+                        turnstileWidgetId = window.turnstile.render(container, {
+                            sitekey: "0x4AAAAAAFq0PQGfF1Bx2-tV",
+                            action: "submit_order",
+                            theme: "light",
+                            callback: (token) => {
+                                currentTurnstileToken = token || "";
+                                if (currentTurnstileToken) {
+                                    orderMessage.style.color = "#166534";
+                                    orderMessage.textContent = "تأیید ضدربات انجام شد. حالا ثبت سفارش را بزن.";
+                                }
+                            },
+                            "expired-callback": () => {
+                                currentTurnstileToken = "";
+                                orderMessage.style.color = "#92400e";
+                                orderMessage.textContent = "اعتبار تأیید ضدربات تمام شد؛ دوباره تأیید کن.";
+                            },
+                            "error-callback": (errorCode) => {
+                                currentTurnstileToken = "";
+                                orderMessage.style.color = "#b91c1c";
+                                orderMessage.textContent = "بارگذاری تأیید ضدربات خطا داد" + (errorCode ? " (کد " + errorCode + ")" : "") + ". اتصال اینترنت یا تنظیمات Cloudflare را بررسی کن.";
+                            }
+                        });
+                        if (turnstileWidgetId === undefined || turnstileWidgetId === null) {
+                            throw new Error("Cloudflare نتوانست ویجت ضدربات را ایجاد کند.");
+                        }
+                        resolve(turnstileWidgetId);
+                    } catch (error) {
+                        turnstileRenderPromise = null;
+                        reject(error);
+                    }
+                });
+            };
+            tryRender();
+        });
+        return turnstileRenderPromise;
+    }
+
+    function activeCartRows() {
+        return Object.entries(cart).filter(([, item]) => item && Number(item.quantity) > 0)
+            .map(([key, item]) => ({ key, item }));
+    }
+
+    window.refreshTechnotekCheckoutSummary = function () {
+        if (!checkoutSummary) return;
+        const rows = activeCartRows();
+        if (!rows.length) {
+            checkoutSummary.textContent = "سبد خرید خالی است.";
+            return;
+        }
+        const lines = rows.map(({ key, item }) => {
+            const name = item.displayName || key;
+            const quantity = Number(item.quantity);
+            const total = Number(item.price) * quantity;
+            return name + " × " + quantity.toLocaleString("fa-IR") + " — " + total.toLocaleString("fa-IR") + " تومان";
+        });
+        const clientTotal = rows.reduce((sum, { item }) => sum + Number(item.price) * Number(item.quantity), 0);
+        lines.push("جمع تقریبی: " + clientTotal.toLocaleString("fa-IR") + " تومان");
+        checkoutSummary.textContent = lines.join("\n");
+    };
+
+    checkoutButton.addEventListener("click", () => {
+        const rows = activeCartRows();
+        if (!window.technotekCatalogLoaded || !window.technotekSupabaseClient) {
+            checkoutNotice.textContent = "اتصال و فهرست محصولات هنوز آماده نیست. اتصال اینترنت را بررسی و صفحه را تازه‌سازی کن.";
+            checkoutNotice.style.color = "#b91c1c";
+            return;
+        }
+        if (!rows.length) {
+            checkoutNotice.textContent = "ابتدا حداقل یک محصول به سبد خرید اضافه کن.";
+            checkoutNotice.style.color = "#b91c1c";
+            return;
+        }
+        if (rows.some(({ item }) => !item.productId)) {
+            checkoutNotice.textContent = "فهرست محصولات تازه‌سازی شده است. سبد را خالی کن، دوباره محصولات را انتخاب کن و سپس سفارش بده.";
+            checkoutNotice.style.color = "#b91c1c";
+            return;
+        }
+        checkoutNotice.textContent = "";
+        orderMessage.textContent = "";
+        checkoutPanel.hidden = false;
+        renderTurnstileIfNeeded().catch((error) => {
+            orderMessage.style.color = "#b91c1c";
+            orderMessage.textContent = error && error.message ? error.message : "ابزار ضدربات آماده نشد؛ اتصال به Cloudflare را بررسی کن.";
+        });
+        window.refreshTechnotekCheckoutSummary();
+        checkoutPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    document.getElementById("cancelCheckoutButton").addEventListener("click", () => {
+        checkoutPanel.hidden = true;
+        checkoutNotice.textContent = "";
+        checkoutButton.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+
+    checkoutForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        if (submitting) return;
+        const client = window.technotekSupabaseClient;
+        if (!window.technotekCatalogLoaded || !client) {
+            orderMessage.textContent = "اتصال به فهرست محصولات برقرار نیست. صفحه را تازه‌سازی کن و دوباره تلاش کن.";
+            orderMessage.style.color = "#b91c1c";
+            return;
+        }
+        const rows = activeCartRows();
+        if (!rows.length || rows.some(({ item }) => !item.productId)) {
+            orderMessage.textContent = "سبد خرید معتبر نیست. صفحه را تازه‌سازی کن، محصولات را دوباره به سبد اضافه کن و تلاش کن.";
+            orderMessage.style.color = "#b91c1c";
+            return;
+        }
+
+        submitting = true;
+        submitButton.disabled = true;
+        orderMessage.style.color = "#075985";
+        orderMessage.textContent = "در حال بررسی ضدربات و ثبت سفارش... لطفاً صفحه را نبند.";
+        try {
+            const payload = {
+                p_customer_name: document.getElementById("customerName").value.trim(),
+                p_phone: document.getElementById("customerPhone").value.trim(),
+                p_city: document.getElementById("customerCity").value.trim(),
+                p_address: document.getElementById("customerAddress").value.trim(),
+                p_notes: document.getElementById("customerNotes").value.trim() || null,
+                p_items: rows.map(({ item }) => ({ id: String(item.productId), quantity: Number(item.quantity) }))
+            };
+            // Do not call the public database RPC from the browser. The Edge Function validates Turnstile server-side first.
+            await renderTurnstileIfNeeded();
+            if (!window.turnstile || typeof window.turnstile.getResponse !== "function" || turnstileWidgetId === null) {
+                throw new Error("ابزار ضدربات آماده نشد. اتصال به Cloudflare را بررسی کن و دوباره تلاش کن.");
+            }
+            const turnstileToken = window.turnstile.getResponse(turnstileWidgetId) || currentTurnstileToken;
+            if (!turnstileToken) {
+                throw new Error("لطفاً ابتدا تأیید ضدربات را کامل کن. اگر علامت تأیید دیده نمی‌شود، کمی صبر کن یا صفحه را تازه‌سازی کن.");
+            }
+            currentTurnstileToken = turnstileToken;
+            const response = await fetch("https://eosvvviaaetyicyrfayw.supabase.co/functions/v1/submit-technotek-order", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "apikey": "sb_publishable_Q0IUDRT8eAMn0v3yY4N4jg_f5liIu8D"
+                },
+                body: JSON.stringify({ ...payload, turnstileToken })
+            });
+            const result = await response.json().catch(() => ({}));
+            if (!response.ok) {
+                throw new Error(result.error || "ثبت سفارش انجام نشد؛ لطفاً دوباره تلاش کن.");
+            }
+            if (!result || !result.order_id) {
+                throw new Error("پاسخ ثبت سفارش کامل نبود؛ نتیجه را از پنل بررسی کن.");
+            }
+            const returnedTotal = Number(result.total_amount);
+            const trackingCode = result.tracking_code || String(result.order_id).slice(0, 8).toUpperCase();
+            orderMessage.style.color = "#166534";
+            orderMessage.textContent = "سفارش با موفقیت ثبت شد. کد پیگیری: " + trackingCode +
+                (Number.isFinite(returnedTotal) ? " — جمع نهایی: " + returnedTotal.toLocaleString("fa-IR") + " تومان." : ".") +
+                " پرداخت اینترنتی هنوز فعال نیست؛ برای هماهنگی سفارش با شما تماس گرفته می‌شود.";
+            checkoutForm.reset();
+            clearCart();
+            currentTurnstileToken = "";
+            if (window.turnstile && turnstileWidgetId !== null) window.turnstile.reset(turnstileWidgetId);
+        } catch (error) {
+            console.error("Technotek order submission failed:", error);
+            orderMessage.style.color = "#b91c1c";
+            orderMessage.textContent = "سفارش ثبت نشد. " + (error && error.message ? error.message : "اتصال یا تنظیمات ثبت سفارش را بررسی کن.");
+            if (currentTurnstileToken && window.turnstile && turnstileWidgetId !== null) {
+                currentTurnstileToken = "";
+                window.turnstile.reset(turnstileWidgetId);
+            }
+        } finally {
+            submitting = false;
+            submitButton.disabled = false;
+        }
+    });
+})();
+</script>
+</body>
+</html>
